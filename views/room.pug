@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='http://code.jquery.com/jquery-1.7.2.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js')
+    script(src='/javascripts/room.js')
+  body
+    p#main(style='display:none')= room
+    h1= room
+    div(style='text-align: center')
+        button#color-btn(style='width:300px; height: 300px; border: none; border-radius: 50%; background-color: ' + color + ';')
+  
